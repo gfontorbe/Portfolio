@@ -36,4 +36,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           source: "index.html,css"
-          target: "~/testGH_SSH"
+          target: "/var/www/portfolio"
