@@ -34,5 +34,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           source: "*"
           target: "~/testGH_SSH"
