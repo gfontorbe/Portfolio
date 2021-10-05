@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mx;
+.card {
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 1rem;
+    align-items: center;
+    position: relative;
+    display: flex;
+    @include mx.textColor(black);
+    &:hover {
+        background-color: white;
+        &>.overlay {
+            @include mx.backgroundColor(grey, 0.5);
+            @include mx.textColor(black);
+            top: 0;
+            opacity: 1;
+        }
+        & img {
+            width: 125%;
+        }
+    }
+    img {
+        width: 100%;
+        transition: width 1s;
+    }
+    .overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+}
