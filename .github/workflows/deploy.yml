@@ -39,5 +39,5 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          source: "index.html,css"
+          source: "index.html,css, assets, js"
           target: "/var/www/portfolio"
