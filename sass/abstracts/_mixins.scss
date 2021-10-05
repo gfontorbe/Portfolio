@@ -1,0 +1,25 @@
+@use './variables' as var;
+@mixin fontsize($key) {
+    $size: map-get($map: var.$font-sizes, $key: $key);
+    font-size: $size;
+}
+
+@mixin textColor($key, $opacity:1) {
+    $color: map-get($map: var.$colors, $key: $key);
+    color: rgba($color, $opacity);
+}
+
+@mixin backgroundColor($key, $opacity:1) {
+    $color: map-get($map: var.$colors, $key: $key);
+    background-color: rgba($color, $opacity);
+}
+
+@mixin borderColor($key, $opacity:1) {
+    $color: map-get($map: var.$colors, $key: $key);
+    border-color: rgba($color, $opacity);
+}
+
+@mixin fontWeight($key) {
+    $weight: map-get($map: var.$font-weights, $key: $key);
+    font-weight: $weight;
+}

@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mx;
+body {
+    font-family: var.$ff-roboto;
+}
+
+h1 {
+    @include mx.fontsize(large);
+    @include mx.fontWeight(bold);
+}
+
+h2 {
+    @include mx.fontsize(medium);
+    @include mx.fontWeight(bold);
+}
+
+h3 {
+    @include mx.fontsize(small);
+    @include mx.fontWeight(bold);
+}
+
+a {
+    @include mx.textColor(white);
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.fs-500 {
+    font-size: 1.5rem;
+}
+
+.fw-regular {
+    @include mx.fontWeight(regular);
+}
+
+.txt-sm {
+    @include mx.fontsize(small);
+}
+
+.txt-m {
+    @include mx.fontsize(medium);
+}

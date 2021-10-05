@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mx;
+#about {
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, rgba(#c9c9c9, 1) 0%, rgba(#c9c9c9, 1) 50%, rgba(#c9c9c9, 0.8) 100%), url(../../assets/images/bg-about.jpg);
+    background-size: contain, contain;
+    background-repeat: no-repeat;
+    background-position-x: left, right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include mx.textColor(black);
+    &>div {
+        padding-top: 6rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    h2 {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    li {
+        padding-bottom: 1rem;
+    }
+    p {
+        padding-bottom: 1rem;
+    }
+}

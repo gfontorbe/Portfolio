@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mx;
+.btn-link {
+    border: solid 1px;
+    @include mx.borderColor(white);
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    margin: 0 0.2rem;
+    white-space: nowrap;
+    @include mx.fontsize(small);
+    &:hover {
+        @include mx.backgroundColor(white);
+        @include mx.textColor(black);
+        text-decoration: none;
+    }
+}

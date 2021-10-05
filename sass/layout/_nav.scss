@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mx;
+nav {
+    @include mx.backgroundColor(black);
+    padding: 1.5rem 2.125rem;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 2 * 2.125rem);
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            padding: 0 2.125rem;
+        }
+    }
+}
+
+.links {
+    display: flex;
+}

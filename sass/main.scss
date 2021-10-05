@@ -1,1 +1,4 @@
-@use "./abstracts/reset";
+@use "./core/reset";
+@use "./core/typography";
+@use "./components/btn-link";
+@use "./pages/index";

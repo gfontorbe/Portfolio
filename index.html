@@ -6,22 +6,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guillaume Fontorbe - Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/55dbb7ec66.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="page-container">
-        <h1>This is an updated page on dev branch again</h1>
         <nav>
+            <ul>
+                <div class="home">
+                    <li class="fs-500 fw-regular">
+                        <a href="#hero">Home</a>
+                    </li>
+                </div>
+                <div class="links">
+                    <li class="fs-500 fw-regular">
+                        <a href="#about">About me</a>
+                    </li>
+                    <li class="fs-500 fw-regular">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="fs-500 fw-regular">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </div>
 
+            </ul>
         </nav>
         <main>
-            <div id="hero"></div>
-            <div id="about"></div>
-            <div id="projects"></div>
-            <div id="contact"></div>
+            <section id="hero">
+                <div>
+                    <h1>
+                        <span class="txt-sm">Hi, I'm</span>
+                        <h1>Guillaume Fontorbe</h1>
+                        <span class="txt-m">Web developer</span>
+                    </h1>
+                </div>
+                <div>
+                    <a href="#about" class="btn-link">About me</a>
+                    <a href="#projects" class="btn-link">Projects</a>
+                    <a href="#contact" class="btn-link">Contact</a>
+
+                </div>
+            </section>
+            <section id="about">
+                <div>
+                    <h2>About me</h2>
+                    <p>As a fullstack developer, I design, code and deploy web applications that answer your business needs.</p>
+                    <p>Passionate about problem solving, I like to take on challenging tasks and address them in a creative manner.</p>
+                    <p>Coming with a background in scientific research, I apply rigor and attention to details to my projects.</p>
+                    <p>Fast learner, I strive to constantly learn and improve my knowledge and skills. I also like to share with others, in the office or around a drink.</p>
+                </div>
+                <div>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>
+                            <h3>Languages: </h3>
+                            <p>C#, Javascript, CSS, HTML</p>
+                        </li>
+                        <li>
+                            <h3>Technologies: </h3>
+                            <p>.NET, React, Node.js, SASS, MVC, Object Oriented Programming, CI/CD</p>
+                        </li>
+                        <li>
+                            <h3>Soft skills: </h3>
+                            <p>Communication, Teamwork, Problem solving, Patience, Creativity</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="projects">
+                <div>
+                    <h2>Projects</h2>
+                    <div class="cards">
+                        <div class="card" id="roomCard">
+                            <img src="./assets/images/calendar.jpg" alt="Room reservation">
+                            <div class="overlay">
+                                <h3>Room Reservation</h3>
+                            </div>
+                        </div>
+                        <div class="card" id="jobCard"><img src="./assets/images/jobboard.jpg" alt="Job board">
+                            <div class="overlay">
+                                <h3>Job Board</h3>
+                            </div>
+                        </div>
+                        <div class="card" id="landingCard"><img src="./assets/images/landingpage.jpg" alt="Landing page">
+                            <div class="overlay">
+                                <h3>Landing page</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal" id="roomModal">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h3>Room reservation</h3>
+                                <button><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>MVC web application for reserving rooms via a calendar with role-based permissions.</p>
+                                <p><span>Tech stack: </span>C#, .NET, SQL, HTML, Bootstrap</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://github.com/gfontorbe/RoomReservation" target="_blank"><i class="fab fa-github"></i> See on GitHub</a>
+                                <a href="https://guillaumefontorbe.com/RoomReservationDemo/" target="_blank"><i class="fas fa-globe"></i>Live Version</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal" id="jobModal">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h3>Job board</h3>
+                                <button><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Web application fetching job advertisement for web developers in Germany.</p>
+                                <p><span>Tech stack: </span>React, Node.js, Express, Redis, Puppeteer, HTML, CSS, Material.UI</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://github.com/gfontorbe/JobBoard" target="_blank"><i class="fab fa-github"></i> See on GitHub</a>
+                                <a href="https://guillaumefontorbe.com/JobBoardDemo/" target="_blank"><i class="fas fa-globe"></i>Live Version</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal" id="landingModal">
+                        <div class="modal-content">
+
+                            <div class="modal-title">
+                                <h3>Landing page</h3>
+                                <button><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Landing page for a design agency.</p>
+                                <p><span>Tech stack: </span>HTML, CSS, Javascript</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://github.com/gfontorbe/LandingPage" target="_blank"><i class="fab fa-github"></i> See on GitHub</a>
+                                <a href="https://guillaumefontorbe.com/LandingPage" target="_blank"><i class="fas fa-globe"></i>Live Version</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section id="contact">
+                <h2>Contact me</h2>
+                <p>You can contact me using the form below or directly <a href="mailto:gfontorbe@gmail.com">via email</a>.</p>
+                <form action="https://formspree.io/f/meqvdzqj" method="POST">
+                    <div class="form-group"><label for="_replyto">Your email:</label><input type="email" name="_replyto"></div>
+                    <div class="form-group"><label for="message">Your message:</label><textarea name="message" cols="100" rows="15"></textarea></div>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
+                </form>
+            </section>
         </main>
-    </div>
+        </div>
 </body>
+<script src="./js/index.js"></script>
 
 </html>

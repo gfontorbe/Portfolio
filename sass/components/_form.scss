@@ -1,0 +1,30 @@
+@use '../abstracts/mixins' as mx;
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25%;
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    label {
+        @include mx.fontsize(x-small);
+        text-align: left;
+    }
+    input {
+        border: none;
+    }
+    textarea {
+        border: none;
+    }
+    button {
+        border: none;
+        @include mx.backgroundColor(white);
+        @include mx.fontsize(x-small);
+        &:hover {
+            @include mx.backgroundColor(black);
+            @include mx.textColor(white);
+        }
+    }
+}
