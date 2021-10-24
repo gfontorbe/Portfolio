@@ -11,6 +11,7 @@
     @include mx.textColor(black);
     &:hover {
         background-color: white;
+        cursor: pointer;
         &>.overlay {
             @include mx.backgroundColor(grey, 0.5);
             @include mx.textColor(black);

@@ -224,6 +224,7 @@ nav ul li {
 }
 .card:hover {
   background-color: white;
+  cursor: pointer;
 }
 .card:hover > .overlay {
   background-color: rgba(201, 201, 201, 0.5);
